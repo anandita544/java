@@ -8,8 +8,8 @@ public class ReverseString {
         for (int i= Str.length()-1;i>=0;i--){
             reverseStr+=Str.charAt(i);
         }
-        System.out.println("string before reversring"+ " "+Str);
-        System.out.println("string after reversring"+ " "+reverseStr);
+        System.out.println("string before reversing"+ " "+Str);
+        System.out.println("string after reversing"+ " "+reverseStr);
 
     }
 }
