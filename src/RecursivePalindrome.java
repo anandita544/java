@@ -5,16 +5,20 @@ public class RecursivePalindrome {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the string");
         String str=sc.nextLine();
-        int i=0;
-        int  j=str.length()-1;
-        palindrome(str,i,j);
-        if(palindrome(str,i,j)){
+
+        palindrome(str);
+        if(palindrome(str)){
             System.out.println("string is palindrome");
         }
         else{
             System.out.println("string is not palindrome");
         }
 
+    }
+    public static boolean palindrome(String str){
+        int i=0;
+        int  j=str.length()-1;
+        return palindrome(str,i,j);
     }
     public static boolean palindrome(String str,int i,int j){
 
